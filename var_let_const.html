@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var  fname = "Akshay";
+        var fname = "Yash";  // redeclared allowed
+        fname = "Darshan"; // reassigned allowed
+
+        document.write(fname + "<br>");
+    </script>
+
+    <script>
+        let  lname = "Akshay";
+       // let lname = "Yash";  // redeclared not allowed
+        lname = "Gavrav"; // reassigned allowed
+
+        document.write(lname + "<br>");
+    </script>
+
+    <script>
+        const  c_name = "TCS";
+        // const c_name = "IBM";  // redeclared not allowed
+        c_name = "InfoSys"; // reassigned not allowed
+
+        document.write(c_name + "<br>");
+    </script>
+</body>
+</html>
