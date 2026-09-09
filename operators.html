@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Arithmatic Operators - +, -, *, /, % -->
+
+    <script>
+        var a = 10;
+        var b = 4;
+        var c  = a-b;
+        document.write(c + "<br>");
+        c++;
+        c++;
+        c++;
+        c--;
+        c++;
+        c--;
+        c++; // output 9
+        document.write(c + "<br>");
+    </script>
+
+    <script>
+        //Assignment Operators - = ,+=,-=,*=,/=
+        var x = 10;
+        var y = 12;
+        x += y;
+        document.write(x + "<br>"); //22
+        document.write(y + "<br>");// 12
+    </script>
+    <script>
+       // Comparison Operators <,>,=>,<=,==,===
+
+       var p = 10;
+       var q = "10";
+        document.write("Output Of (==)" + "<br>");//(==) it does not check the data type ,it only checks the value
+
+       if(p==q){
+        document.write("True" + "<br>");
+       }
+       else{
+        document.write("False" + "<br>");
+       }
+
+       var r = 10;
+       var s = "10";
+       document.write("Output Of (===)" + "<br>");//(===) it checks both the value and the data type
+
+       if (r===s){
+        document.write("True" + "<br>");
+       }
+       else{
+        document.write("False" + "<br>");
+       }
+    </script>
+
+    <script>
+        //Logical Operators - &&, ||, !
+
+        var age = 18;
+    
+
+       if(age >= 18 && age <= 60){
+        document.write("You are eligible" + "<br>");
+       }
+       else{
+        document.write("You are not eligible" + "<br>");
+       }
+
+      
+    </script>
+    <script>
+        var day = "Sunday";
+        if(day === "Saturday" || day === "Sunday"){
+            document.write("Its Weekend" + "<br>");
+        }
+        else{
+            document.write("Its Weekday" + "<br>");
+        }
+    </script>
+
+    <script>
+        let agee = 17;
+        let eligibility = (agee >= 18) ? "Eligible For Vote" : "Not Eligible For Vote";
+        document.write(eligibility + "<br>");
+    </script>
+</body>
+</html>
