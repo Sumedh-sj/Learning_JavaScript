@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Example - Change Text</h2>
+    <h1 id ="title">Hello, World!</h1>
+    <button onclick =  "changeText()">Text Change</button>
+    <script>
+        function changeText(){
+            document.getElementById("title").innerHTML = "Hello, Sumedh!";
+        }
+    </script>
+
+<hr>
+
+    <h2> Example - Change Style</h2>
+    <p id = "msg"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+    <button onclick = "changeColor()">Change Color</button>
+    <script>
+        function changeColor(){
+            document.getElementById("msg").style.color  = "blue";
+        }
+    </script>
+
+<hr>
+
+    <h2> Example - Change Image </h2>
+    <img id = "myimg" src ="images/images (1).jpg" width = "300px">
+    <button onclick = "changeImg()" >Change Image </button>
+    <script>
+        function changeImg(){
+            document.getElementById("myimg").src = "images/images.jpg";
+        }
+    </script>
+
+    <hr>
+
+    <h2>Get Input From User And Display It</h2>
+    <input type = "text" id = "name" placeholder = "Enter Your Name">
+    <button onclick = "displayName()">Display Name</button>
+    <h2 id = "output"></h2>
+    <script>
+        function displayName(){
+            var name = document.getElementById("name").value;
+            document.getElementById("output").innerHTML = "Hello, " + name + "!";
+        }
+    </script>
+
+    <hr>
+    <h2>
+    Example - Change Font Size Using + , -</h2>
+    <p id ="para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+    <button onclick = "increase()" > + </button>
+    <button onclick = "decrease()" > - </button>
+    <script>
+        let size = 16; // Initial font size
+
+        function increase(){
+            size++;
+            document.getElementById("para").style.fontSize = size + "px";
+        }
+        function decrease(){
+            size--;
+            document.getElementById("para").style.fontSize = size + "px";
+        }
+    </script>
+    <hr>
+
+    <h2> Example - Change Background Color </h2>
+    <button onclick = "toggleTheme()">Change Background Color</button>  
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            transition:  0.5s;
+        }
+        .dark-mode{
+            background-color: black;
+            color: white;
+        }
+    </style>  
+    <script>
+        function toggleTheme(){
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>       
+</body>
+</html>

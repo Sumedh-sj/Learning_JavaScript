@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    // updating and deleting the array elements
+    <script>
+        var a = ["Sumedh", 20, "Male", "Software Developer", "Pune"];
+
+        document.write(a , "<br>");
+
+        a[4] = "Akurdi"; // update the value of index 4
+        a[1] = 21;
+
+        document.write(a , "<br>");
+
+        delete a[0]; // delete the value of index 0
+        document.write(a , "<br>");
+    </script>
+
+    <br>
+
+    <h2> Sorting And Reversing The Array Elements </h2>
+    <script>
+        // sorting and reversing the array elements
+        var b = ["Sumedh","Ashwini","Mansoor","Darshan"];
+        document.write(b , "<br>");
+
+        b.sort(); // sorting the array elements
+        document.write(b , "<br>");
+
+        b.reverse(); // reversing the array elements
+        document.write(b , "<br>");
+    </script>
+    <br>
+    <h2> Push And Pop The Array Elements </h2>
+
+    <script>
+        // push and pop the array elements
+        var c = ["Sumedh","Ashwini","Mansoor","Darshan"];
+        document.write(c , "<br>");
+
+        c.pop(); // remove the last element
+        document.write(c , "<br>");
+
+        c.push("Chetna"); // add the element at the end
+        document.write(c , "<br>");
+    </script>
+
+    <h2> Shift Unshift</h2>
+    <script>
+        // shift and unshift the array elements
+         var d = ["Sumedh","Ashwini","Mansoor","Darshan"];
+        document.write(d , "<br>");
+        d.shift(); // remove the first element
+        document.write(d , "<br>");
+        d.shift(); // remove the first element
+        document.write(d , "<br>");
+
+        d.unshift("Priya"); // add the element at the beginning
+        document.write(d,"<br>"); 
+        d.unshift("Grarav"); // add the element at the beginning
+        document.write(d,"<br>");
+    </script>
+
+    <h2>Concatenating Arrays And Joining</h2>
+    <script>
+        var a  = ["Sumedh","Ashwini","Mansoor","Darshan"];
+        var b = ["Chetna","Priya","Grarav"];
+        var c = a.concat(b); // concatenating the arrays
+        document.write(c , "<br>");
+        
+        var d = ["Ajhar", "Riya", "Sneha"]; // joining the array elements
+        var c = a.concat(b,d);
+        document.write(c , "<br>");
+
+        var x = c.join(" * "); // joining the array elements with a separator
+        document.write(x , "<br>");
+    </script>
+</body> 
+</html>
